@@ -27,6 +27,14 @@ function like so...
 
     $.polypage.init([ 'logged_in', 'admin' ]);
 
+
+By default, polypage appends a div containing the page states to the body tag of the html. If you want the polypage states to be added elsewhere, you can call the init function with a css selector for the target element.
+
+    $.polypage.init(null,"#page_controls");
+    $.polypage.init([ 'logged_in', 'admin' ],"#page_controls");
+
+
+
 MORE INFO
 ---------
 For more help and an example open the index.html file in a web browser.
